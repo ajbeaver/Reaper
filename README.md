@@ -31,7 +31,7 @@ Most RSS tools are either heavy, old, or trying to do too much. Reaper Ticker ai
 
 <p align="center">
   <a href="https://youtu.be/9YSd4TECyY4">
-    <img src="https://img.youtube.com/vi/9YSd4TECyY4/maxresdefault.jpg" alt="Reaper Ticker Demo" width="80%">
+    <img src="https://img.youtube.com/vi/9YSd4TECyY4/hqdefault.jpg" alt="Reaper Ticker Demo" width="80%">
   </a>
   Click to watch the full demo
 </p>
