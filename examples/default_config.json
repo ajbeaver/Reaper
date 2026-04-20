@@ -1,0 +1,80 @@
+{
+  "feeds": [
+    {
+      "name": "HN Frontpage",
+      "url": "https://hnrss.org/frontpage",
+      "enabled": true,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "name": "BBC World",
+      "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+      "enabled": true,
+      "tags": [
+        "world"
+      ]
+    },
+    {
+      "name": "NPR News",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "enabled": true,
+      "tags": [
+        "us",
+        "world"
+      ]
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "enabled": true,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "name": "Engadget",
+      "url": "https://www.engadget.com/rss.xml",
+      "enabled": true,
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "name": "HN Newest",
+      "url": "https://hnrss.org/newest",
+      "enabled": true,
+      "tags": [
+        "tech"
+      ]
+    }
+  ],
+  "filters": {
+    "include_keywords": [],
+    "exclude_keywords": [],
+    "include_sources": [],
+    "exclude_sources": []
+  },
+  "display": {
+    "scroll_speed_lines_per_second": 2.5,
+    "refresh_interval_seconds": 300,
+    "max_items": 200,
+    "density": "comfortable",
+    "ordering": "newest_first"
+  },
+  "behavior": {
+    "open_links": true,
+    "dedupe_window": 1000,
+    "preview_length": 280,
+    "request_timeout_seconds": 10.0
+  },
+  "theme": {
+    "enable_color": true,
+    "splash_enabled": true,
+    "preset": "default",
+    "header_title": "REAPER TICKER",
+    "header_tagline": "LIVE RSS WIREFEED",
+    "palette": {}
+  }
+}
