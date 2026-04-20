@@ -56,7 +56,7 @@ cp examples/default_config.json config.json
 reaper-ticker --config config.json
 ```
 
-If `--config` is omitted, Reaper Ticker searches `./config.json` first and then `~/.reaper/config.json`.
+If `--config` is omitted, Reaper Ticker searches `~/.reaper/config.json` first and then `./config.json`.
 
 Requires Python 3.11 or newer.
 

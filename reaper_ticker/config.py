@@ -234,8 +234,8 @@ def default_config_path() -> Path:
 def config_search_paths(cwd: Path | None = None) -> tuple[Path, ...]:
     base_cwd = cwd if cwd is not None else Path.cwd()
     return (
-        base_cwd / "config.json",
         default_config_path(),
+        base_cwd / "config.json",
     )
 
 

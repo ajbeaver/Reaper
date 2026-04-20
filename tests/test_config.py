@@ -62,7 +62,7 @@ class ConfigTests(unittest.TestCase):
             with patch("reaper_ticker.config.Path.home", return_value=Path(tmpdir)):
                 self.assertEqual(default_config_path(), Path(tmpdir) / ".reaper" / "config.json")
 
-    def test_discover_config_path_prefers_local_config(self) -> None:
+    def test_discover_config_path_prefers_home_config(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
             root = Path(tmpdir)
             local_config = root / "config.json"
@@ -72,7 +72,7 @@ class ConfigTests(unittest.TestCase):
             home_config.write_text(json.dumps({"feeds": [{"name": "Home", "url": "https://example.com/home.xml"}]}), encoding="utf-8")
             with patch("reaper_ticker.config.Path.home", return_value=root):
                 discovered = discover_config_path(root)
-        self.assertEqual(discovered, local_config)
+        self.assertEqual(discovered, home_config)
 
     def test_load_config_uses_home_default_when_local_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
